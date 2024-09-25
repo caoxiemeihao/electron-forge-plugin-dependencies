@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2021",
+    "outDir": "dist",
+    "inlineSourceMap": true,
+    "rootDir": "src",
+    "experimentalDecorators": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationMap": false
+  },
+  "include": ["src"]
+}

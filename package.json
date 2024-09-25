@@ -1,0 +1,50 @@
+{
+  "name": "electron-forge-plugin-dependencies",
+  "version": "1.0.0",
+  "description": "Help Electron Forge Vite/Webpack project collect dependencies",
+  "main": "dist/DependenciesPlugin.js",
+  "repository": "https://github.com/caoxiemeihao/electron-forge-plugin-dependencies.git",
+  "author": "Leo Wang(草鞋没号) <308487730@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "rm -rf dist && tsc --watch",
+    "build": "rm -rf dist && tsc",
+    "pretest": "node test/pretest.js",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "peerDependencies": {
+    "@electron-forge/core-utils": "*",
+    "@electron-forge/plugin-base": "*",
+    "@electron-forge/shared-types": "*"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "debug": "^4.3.7",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@electron-forge/core-utils": "latest",
+    "@electron-forge/plugin-base": "latest",
+    "@electron-forge/shared-types": "latest",
+    "@electron/asar": "^3.2.13",
+    "@types/debug": "^4.1.12",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.6.1",
+    "dependencies-tree": "^2.0.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "electron",
+    "forge",
+    "plugin",
+    "dependencies",
+    "collect",
+    "copy"
+  ]
+}
